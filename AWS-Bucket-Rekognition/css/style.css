@@ -8,12 +8,21 @@ body:before{
   vertical-align:middle;
 }
 
+#img {
+  width: 70%;
+  object-fit:contain;
+  margin-top: 5px;
+  border: 1px solid black;
+}
 #del {
 	background-color: white;
 }
+#del:hover { 
+  background-color: black;
+  color: white;
+}
 
 a {
-	//font-weight:bold;
 	font-size: 25px;
 	text-decoration: none;
 }
@@ -67,7 +76,7 @@ a:hover { text-decoration: underline; }
 	border-radius: 20px;
 	box-shadow: 0 4px 16px rgba(0,79,255,0.3);
 	transition:0.3s;
-	top:90%;
+	bottom: 0;
 	left:50%;
 	transform: translate(-50%,-50%);
 }
