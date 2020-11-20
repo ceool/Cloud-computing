@@ -1,4 +1,4 @@
-var BucketName = '버킷 이름';
+var BucketName = '버킷이름';
 var bucketRegion = '지역';
 var IdentityPoolId = 'pool';
 
@@ -22,14 +22,14 @@ function listFolders() {
         var prefix = commonPrefix.Prefix;
         var folderName = decodeURIComponent(prefix.replace('/', ''));
         return getHtml([
-          '<p style="margin-right:40px;"><a href="javascript:;" onclick="viewImage(\'' + folderName + '\')">',
-          folderName, '</a></p>',
-          '<button style="margin-right:40px;" id="del" onclick="deleteFolder(\'' + folderName + '\')">삭제</button><br><br>'
+          '<span style="margin-right:4.3%;"><a style="font-size: 220%;" href="javascript:;" onclick="viewImage(\'' + folderName + '\')">',
+          folderName, '</a></span><br>',
+          '<button style="margin-top: 3%; margin-bottom: 3%; margin-right:4.3%;" id="del" onclick="deleteFolder(\'' + folderName + '\')">삭제</button><br><br>'
         ]);
       });
       var message = folders.length ?
         getHtml([
-          '<p>경로를 클릭하여 접근 가능합니다.<br>삭제 버튼을 클릭하면 폴더를 지울 수 있습니다.</p>'
+          '<p>목록을 클릭하십시오.<br>삭제 버튼으로 폴더를 지울 수 있습니다.</p>'
         ]) :
         '<p>아무것도 존재하지 않습니다. 새로운 폴더를 생성해주세요.';
       var htmlTemplate = [
@@ -90,12 +90,12 @@ function viewImage(folderName) {
       var photoUrl = bucketUrl + encodeURIComponent(photoKey);
       return getHtml([
         '<p>',
-        '<span style = "word-break:break-all; font-size:18px; font-weight:bold;">',
+        '<span style = "word-break:break-all; font-size:220%; font-weight:bold;">',
         photoKey.replace(folderPhotosKey, ''),
         '</span><br>',
         '<a href="javascript:;"><img id="img" onclick="fnImgPop(this.src)" src="' + photoUrl + '"/></a>',
         '<br>',
-        '<a href="' + photoUrl + '"download><button id="del">다운로드</button></a> ',
+        '<a id="link" href="' + photoUrl + '"download><button id="del">다운로드</button></a> ',
         '<span onclick="deletePhoto(\'' + folderName + "','" + photoKey + '\')">',
         '<button id="del">삭제</button>',
         '</span>',
@@ -103,7 +103,7 @@ function viewImage(folderName) {
       ]);
     });
     var message = photos.length ?
-      '<p>삭제를 누르면 해당 이미지를 삭제할 수 있습니다.</p><br>' :
+      '<p>삭제를 누르면 이미지를 삭제할 수 있습니다.</p><br>' :
       '<p>해당 경로에 아무런 이미지도 없습니다. 새로 업로드해주세요.</p>';
     var htmlTemplate = [
       '<h3>',
@@ -117,7 +117,7 @@ function viewImage(folderName) {
       '<label for="photoupload">이미지 선택</label><br><br><span id="file-chosen">파일을 선택해주세요.</span>',
       '<br><br><button id="addphoto" onclick="addPhoto(\'' + folderName + '\')">',
       '이미지 업로드',
-      '</button><br><br><br><br><br>',
+      '</button><br><br><br><br><br><br>',
       '<button id="option" onclick="listFolders()">',
       '이전 경로',
       '</button>',

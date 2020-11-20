@@ -1,5 +1,6 @@
 body{
   text-align:center;
+  font-size: 35px;
 }
 body:before{
   content:'';
@@ -15,30 +16,38 @@ body:before{
   border: 1px solid black;
 }
 #del {
-	background-color: white;
+  width: 35%;
+  height: 30%;
+  font-size: 140%;
+  border: 2px solid dodgerblue;
+  background-color: white;
+  color: dodgerblue;
+  padding: 14px 28px;
+  cursor: pointer;
 }
+
 #del:hover { 
-  background-color: black;
+  background: #2196F3;
   color: white;
 }
 
 a {
-	font-size: 25px;
 	text-decoration: none;
 }
-a:hover { text-decoration: underline; }
+a:hover { color: dodgerblue; }
 
 #addphoto{
   background:#1AAB8A;
   color:#fff;
   border:none;
   position:relative;
-  height:60px;
-  font-size:1.6em;
-  padding:0 2em;
+  font-size:220%;
+  padding: 14px 28px;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
+  width: 85%;
+  height: 20%;
 }
 #addphoto:hover{
   background:#fff;
@@ -49,7 +58,7 @@ a:hover { text-decoration: underline; }
   position:absolute;
   top:0;
   right:0;
-  height:2px;
+  height:5%;
   width:0;
   background: #1AAB8A;
   transition:400ms ease all;
@@ -67,11 +76,11 @@ a:hover { text-decoration: underline; }
 
 #option{
 	position: fixed;
-	width:120px;
-	height: 40px;
+	width: 32%;
+	height: 5%;
 	color:#fff;
 	background: #004fff;
-	font-size: 16px;
+	font-size: 100%;
 	border:none;
 	border-radius: 20px;
 	box-shadow: 0 4px 16px rgba(0,79,255,0.3);
@@ -92,15 +101,11 @@ a:hover { text-decoration: underline; }
 label {
   background-color: indigo;
   color: white;
-  padding: 0.5rem;
-  font-family: sans-serif;
   border-radius: 0.3rem;
   cursor: pointer;
   margin-top: 1rem;
+  font-size: 170%;
+  width: 70%;
+  height: 30%;
+  padding: 14px 28px;
 }
-
-#file-chosen{
-  margin-left: 0.3rem;
-  font-family: sans-serif;
-}
-
