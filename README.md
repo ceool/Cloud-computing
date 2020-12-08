@@ -5,7 +5,6 @@
   - Amazon Rekognition을 이용한 이미지 인식 결과를 웹으로 볼 수 있음.
     + KOR: **유명인사 찾기, 사람얼굴 분석, 이미지 레이블, 텍스트 인식(LINE, WORD), 불건전한 이미지 인식**
     + ENG: recognizeCelebrities, DetectFaces, detectLabels, detectText, detectModerationLabels
-  
 
 
 ## B. 프로젝트 멤버 이름 및 멤버 별로 담당한 파트에 대한 소개
@@ -16,8 +15,18 @@
 이외 멤버 없음.
 
 
-
 ## C. 프로젝트 소개 및 개발 내용 소개
+ - 해당 프로젝트는 아마존의 AWS 클라우드 서비스를 기반으로 만들어졌습니다.
+ - 자바스크립트와 HTML은 서버 파일을 직접 불러올 수 없지만, S3 버킷을 사용하여 파일을 불러오도록 구현할 수 있습니다.
+ - 아마존 AWS의 S3 Bucket과 AWS Rekognition을 Cognito 자격증명 폴로 접근하여 웹에서 사용할 수 있도록 개발했습니다.
+ - 웹브라우저로 S3의 Bucket으로 간편하게 파일을 업로드할 수 있으며, 버킷에 있는 파일을 다운로드, 삭제할 수 있습니다.
+    + S3 버킷의 폴더도 간편하게 생성 및 삭제가 가능합니다.
+ - S3의 이미지 파일들은 AWS Rekognition 결과를 웹페이지에서 바로 볼 수 있습니다.
+ - 버킷 폴더 안의 이미지를 웹에서 볼 때, AWS Rekognition 과정을 기다릴 필요가 없으며 결과가 나오는대로 웹에 보여집니다.
+    + 즉, Rekognition 결과가 나올 때까지 기다리지 않아도, 이미지 업로드, 삭제, 다운로드 폴더 생성 등 모든 작업을 할 수 있습니다.
+
+
+## D. 프로젝트 개발 결과물 소개 (+ 다이어그램)
 ![diagram](https://user-images.githubusercontent.com/62891711/101473403-22af0700-398d-11eb-8873-83f5748fa1a5.png)
 * Amazon Cognito 자격증명 폴 관리를 생성하고 S3 버킷과 Rekognition 접근이 가능하도록 했습니다.
   - AWS ICM에서 AmazonRekognitionReadOnlyAccess, AmazonS3FullAccess에 생성한 Cognito의 정책을 사용하도록 허용.
@@ -86,4 +95,5 @@
   - 사진 속 인물이 남자인지 여자인지, 유명한 인물인지 업로드만으로 손쉽게 알 수 있습니다.
   - GUI로 아마존 S3 버킷에 있는 파일들을 손쉽게 관리가 가능하며 업로드와 다운로드, 삭제가 간편합니다.
   - AmazonRekognition 기능을 직관적으로 스마트폰이나 PC로 웹에 접속하여 손쉽게 사용할 수 있습니다.
+  - HTML에서 보안상의 이유로 파일 접근이 불가능하지만, S3 버킷을 이용하여 서버의 이미지를 바로 Rekognition 결과를 보는 것처럼 할 수 있습니다.
   
