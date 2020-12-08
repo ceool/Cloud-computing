@@ -43,7 +43,7 @@
 ---
  
 ### 2. 폴더생성 및 이전경로
-<img src="https://user-images.githubusercontent.com/62891711/101465279-158d1a80-3983-11eb-8911-9c26cbdd098d.png"  width="700">
+<img src="https://user-images.githubusercontent.com/62891711/101477481-9d2e5580-3992-11eb-85d3-73668f338759.png"  width="700">
 
   - 폴더 만들기 버튼과 이전 경로 버튼은 항상 하단에 고정되어있습니다.
   - 자바스크립트에 영향을 주는 단어는 폴더 이름으로 사용할 수 없게 막아두었습니다. 
