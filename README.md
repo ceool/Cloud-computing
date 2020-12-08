@@ -1,17 +1,19 @@
 # Cloud-computing-Project
 ## A. 프로젝트 명
 ### **AWS S3 버킷 클라우드 이미지 관리 및 Rekognition을 이용한 이미지 분석 웹페이지**
-  - 브라우저에서 AWS 우분투 nginx 웹서버에 접속하여 AWS S3 버킷의 폴더와 이미지 관리(업로드, 다운로드, 삭제)
-  - Amazon Rekognition을 이용한 이미지 인식 결과를 웹으로 볼 수 있음.
-    + KOR: **유명인사 찾기, 사람얼굴 분석, 이미지 레이블, 텍스트 인식(LINE, WORD), 불건전한 이미지 인식**
-    + ENG: recognizeCelebrities, DetectFaces, detectLabels, detectText, detectModerationLabels
-
+```
+  브라우저에서 AWS 우분투 nginx 웹서버에 접속하여 AWS S3 버킷의 폴더와 이미지 관리(업로드, 다운로드, 삭제)
+  Amazon Rekognition을 이용한 이미지 인식 결과를 웹으로 볼 수 있음.
+    - KOR: **유명인사 찾기, 사람얼굴 분석, 이미지 레이블, 텍스트 인식(LINE, WORD), 불건전한 이미지 인식**
+    - ENG: recognizeCelebrities, DetectFaces, detectLabels, detectText, detectModerationLabels
+```
 
 ## B. 프로젝트 멤버 이름 및 멤버 별로 담당한 파트에 대한 소개
 ### **박준현(20165315)**: 
-  - 한림대학교 3학년 빅데이터 전공 재학 중.
-  - Everything. (서버 구축, html CSS Javascript 코딩, 기획 및 완성)
-  
+```
+한림대학교 3학년 빅데이터 전공 재학 중.
+Everything. (서버 구축, html CSS Javascript 코딩, 기획 및 완성)
+```  
 이외 멤버 없음.
 
 
@@ -24,7 +26,6 @@
  - S3의 이미지 파일들은 AWS Rekognition 결과를 웹페이지에서 바로 볼 수 있습니다.
  - 버킷 폴더 안의 이미지를 웹에서 볼 때, AWS Rekognition 과정을 기다릴 필요가 없으며 결과가 나오는대로 웹에 보여집니다.
     + 즉, Rekognition 결과가 나올 때까지 기다리지 않아도, 이미지 업로드, 삭제, 다운로드 폴더 생성 등 모든 작업을 할 수 있습니다.
-
 
 ## D. 프로젝트 개발 결과물 소개 (+ 다이어그램)
 ![diagram](https://user-images.githubusercontent.com/62891711/101473403-22af0700-398d-11eb-8873-83f5748fa1a5.png)
