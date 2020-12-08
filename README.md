@@ -1,7 +1,7 @@
 # Cloud-computing-Project
 ## A. 프로젝트 명
 ### **AWS S3 버킷 클라우드 이미지 관리 및 Rekognition을 이용한 이미지 분석 웹페이지**
-  - 브라우저에서 AWS EC2 우분투 nginx 서버에 접속하여 AWS S3 버킷의 폴더와 이미지 관리.(업로드, 다운로드, 삭제)
+  - 브라우저에서 AWS 우분투 nginx 웹서버에 접속하여 AWS S3 버킷의 폴더와 이미지 관리(업로드, 다운로드, 삭제)
   - Amazon Rekognition을 이용한 이미지 인식 결과를 웹으로 볼 수 있음.
     + KOR: **유명인사 찾기, 사람얼굴 분석, 이미지 레이블, 텍스트 인식(LINE, WORD), 불건전한 이미지 인식**
     + ENG: recognizeCelebrities, DetectFaces, detectLabels, detectText, detectModerationLabels
