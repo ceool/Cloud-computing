@@ -29,7 +29,6 @@
 * 웹에서 보고 있는 해당 경로의 이미지들은 Rekognition으로 인식 결과를 자동으로 순차적으로 띄어줍니다.
 
 
-
 ## E.	개발 결과물을 사용하는 방법 소개
 ### 1. 초기화면
 <img src="https://user-images.githubusercontent.com/62891711/101464122-99460780-3981-11eb-838a-dbac1d70925a.png"  width="500">
